@@ -1,0 +1,21 @@
+{
+  "name": "LinguaBridge",
+  "short_name": "LinguaBridge",
+  "description": "Communication instantanée sans barrière de langue",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f0f1a",
+  "theme_color": "#1a1a2e",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "education"],
+  "prefer_related_applications": false
+}
