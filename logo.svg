@@ -1,0 +1,43 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#312E81"/>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="128" y1="128" x2="384" y2="384" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <filter id="glow" x="0" y="0" width="512" height="512" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="36" y="36" width="440" height="440" rx="110" fill="url(#bg2)"/>
+
+  <!-- Orbit Rings -->
+  <circle cx="256" cy="256" r="132" stroke="url(#neon)" stroke-width="16" opacity="0.28"/>
+  <circle cx="256" cy="256" r="92" stroke="url(#neon)" stroke-width="10" opacity="0.5"/>
+
+  <!-- Main Shape -->
+  <g filter="url(#glow)">
+    <path d="M178 180C178 162 192 148 210 148H302C320 148 334 162 334 180V332C334 350 320 364 302 364H210C192 364 178 350 178 332V180Z"
+          fill="url(#neon)"/>
+
+    <!-- Split Screen Concept -->
+    <rect x="248" y="176" width="16" height="160" rx="8" fill="#0F172A" opacity="0.75"/>
+
+    <!-- Floating Dot -->
+    <circle cx="256" cy="398" r="14" fill="#22D3EE"/>
+  </g>
+
+  <!-- Corner Accent -->
+  <path d="M338 174L370 142" stroke="#A78BFA" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+</svg>
